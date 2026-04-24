@@ -40,7 +40,7 @@ E --> R[(Redis Cache)]
 F --> R
 
 %% Message Queue
-F --> MQ[Message Queue (Kafka)]
+F --> MQ[Message Queue Kafka]
 G --> MQ
 H --> MQ
 
