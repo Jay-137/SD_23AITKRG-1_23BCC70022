@@ -14,7 +14,7 @@ The system follows a **microservices architecture** to ensure scalability, fault
 flowchart TD
 
 %% Client
-A[Client App (Mobile/Web)]
+A[Client App (Mobile & Web)]
 
 %% API Gateway
 A --> B[API Gateway]
