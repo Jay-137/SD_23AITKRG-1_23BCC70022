@@ -10,18 +10,16 @@ The system follows a **microservices architecture** to ensure scalability, fault
 
 ## 2. High-Level Architecture Diagram
 
-## 🏗️ Architecture Diagram (Mermaid)
-
 ```mermaid
 flowchart TD
 
-%% Client Layer
+%% Client
 A[Client App (Mobile/Web)]
 
-%% Gateway
+%% API Gateway
 A --> B[API Gateway]
 
-%% Services Layer
+%% Services
 B --> C[Auth Service]
 B --> D[User Service]
 B --> E[Restaurant Service]
@@ -52,12 +50,13 @@ MQ --> H
 
 %% External Systems
 G --> PG[Payment Gateway]
-H --> MAPS[Maps / Location Service]
+H --> MAPS[Maps Service]
 
-%% Real-time
+%% Real-time updates
 H --> WS[WebSocket Server]
 WS --> A
 ```
+
 
 
 ---
